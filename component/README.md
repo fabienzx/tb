@@ -8,6 +8,7 @@
 
 In order to list services related to the use of Thingsboard inside Docker Linux :
 `docker-compose config --services`
+
 Result expected :
 `mytb`
 
@@ -16,6 +17,7 @@ Result expected :
 
 In order to list network dependencies declared inside ***docker-compose.yml*** :
 `docker-compose config`
+
 Result expected :
 `services:
   mytb:
