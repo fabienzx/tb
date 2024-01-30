@@ -10,8 +10,9 @@ In order to list services related to the use of Thingsboard inside Docker Linux 
 `docker-compose config --services`
 
 Result expected :
-`mytb`
-
+```bash
+mytb
+```
 
 ## Network dependencies
 
@@ -55,3 +56,4 @@ services:
       - /home/kali/.mytb-data:/data:rw
       - /home/kali/.mytb-logs:/var/log/thingsboard:rw
   version: '3.0'
+```
