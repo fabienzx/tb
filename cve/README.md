@@ -112,6 +112,7 @@ Related to the application itself (JAVA jar):
 >18 (HIGH), 4 (CRITICAL), TOTAL : 22, FIXED:22, AFFECTED:0, WNF:0.
 
 
+
 *What is "fixed", "affected", "will-not-fix" ?*
 
 Fixed : A patch or solve has been found and deployed, but the system is still using a potentially vulnerable version of the system (updating should fix the issue)
