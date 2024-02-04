@@ -13,6 +13,7 @@ docker-compose config --services
 ```
 
 Result expected : `mytb`
+
 In our case, ***mytb*** is the name of the service who's using the docker image "thingsboard/tb-postgres".
 
 ## Network dependencies
