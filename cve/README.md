@@ -113,8 +113,8 @@ Related to the application itself (JAVA jar):
 
 <br>
 <br>
-*What is "fixed", "affected", "will-not-fix" ?*
-
+__*What is "fixed", "affected", "will-not-fix" ?*__
+<br>
 Fixed : A patch or solve has been found and deployed, but the system is still using a potentially vulnerable version of the system (updating should fix the issue)
 
 Affected : A patch or solve hasn't been found yet, and system may be vulnerable
