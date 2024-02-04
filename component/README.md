@@ -2,6 +2,7 @@
 
 - [Services](#services)
 - [Network dependencies](#network_dependencies)
+- [Layers and build](#layersbuild)
 
 
 ## Services
@@ -49,4 +50,44 @@ Result expected :
 - protocol: udp
   published: 5688
   target: 5688
+```
+
+## Layers and build
+
+In order to display the history of the Docker image layers, showing the commands run in each layer during the image build process :
+```bash
+docker history thingsboard/tb-postgres
+```
+
+Result expected :
+```bash
+IMAGE          CREATED        CREATED BY                                      SIZE      COMMENT
+0a58a12b9016   2 months ago   CMD ["start-tb.sh"]                             0B        buildkit.dockerfile.v0
+<missing>      2 months ago   VOLUME [/data]                                  0B        buildkit.dockerfile.v0
+<missing>      2 months ago   EXPOSE map[5685/udp:{}]                         0B        buildkit.dockerfile.v0
+<missing>      2 months ago   EXPOSE map[5683/udp:{}]                         0B        buildkit.dockerfile.v0
+<missing>      2 months ago   EXPOSE map[1883/tcp:{}]                         0B        buildkit.dockerfile.v0
+<missing>      2 months ago   EXPOSE map[9090/tcp:{}]                         0B        buildkit.dockerfile.v0
+<missing>      2 months ago   USER thingsboard                                0B        buildkit.dockerfile.v0
+<missing>      2 months ago   RUN /bin/sh -c apt-get update     && apt-get…   419MB     buildkit.dockerfile.v0
+<missing>      2 months ago   COPY logback.xml thingsboard.conf start-db.s…   201MB     buildkit.dockerfile.v0
+<missing>      2 months ago   ENV PGLOG=/var/log/postgres                     0B        buildkit.dockerfile.v0
+<missing>      2 months ago   ENV SPRING_DATASOURCE_PASSWORD=postgres         0B        buildkit.dockerfile.v0
+<missing>      2 months ago   ENV SPRING_DATASOURCE_USERNAME=thingsboard      0B        buildkit.dockerfile.v0
+<missing>      2 months ago   ENV SPRING_DATASOURCE_URL=jdbc:postgresql://…   0B        buildkit.dockerfile.v0
+<missing>      2 months ago   ENV SPRING_DRIVER_CLASS_NAME=org.postgresql.…   0B        buildkit.dockerfile.v0
+<missing>      2 months ago   ENV PATH=/usr/local/sbin:/usr/local/bin:/usr…   0B        buildkit.dockerfile.v0
+<missing>      2 months ago   ENV PGDATA=/data/db                             0B        buildkit.dockerfile.v0
+<missing>      2 months ago   ENV DATABASE_TS_TYPE=sql                        0B        buildkit.dockerfile.v0
+<missing>      2 months ago   ENV HTTP_BIND_PORT=9090                         0B        buildkit.dockerfile.v0
+<missing>      2 months ago   ENV DATA_FOLDER=/data                           0B        buildkit.dockerfile.v0
+<missing>      2 months ago   ENV PG_MAJOR=12                                 0B        buildkit.dockerfile.v0
+<missing>      3 months ago   RUN /bin/sh -c apt-get update && apt-get ins…   443MB     buildkit.dockerfile.v0
+<missing>      3 months ago   ENV JAVA_DEBIAN_VERSION=11.0.20+8-1~deb11u1     0B        buildkit.dockerfile.v0
+<missing>      3 months ago   ENV JAVA_VERSION=11.0.20                        0B        buildkit.dockerfile.v0
+<missing>      3 months ago   ENV JAVA_HOME=/docker-java-home                 0B        buildkit.dockerfile.v0
+<missing>      3 months ago   ENV LANG=C.UTF-8                                0B        buildkit.dockerfile.v0
+<missing>      8 months ago   RUN /bin/sh -c apt-get update     && apt-get…   1.96MB    buildkit.dockerfile.v0
+<missing>      9 months ago   /bin/sh -c #(nop)  CMD ["bash"]                 0B        
+<missing>      9 months ago   /bin/sh -c #(nop) ADD file:a2378c1b12e95db69…   80.5MB
 ```
