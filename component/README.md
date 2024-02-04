@@ -83,7 +83,7 @@ IMAGE          CREATED        CREATED BY                                      SI
 <missing>      2 months ago   ENV HTTP_BIND_PORT=9090                         0B        buildkit.dockerfile.v0
 <missing>      2 months ago   ENV DATA_FOLDER=/data                           0B        buildkit.dockerfile.v0
 <missing>      2 months ago   ENV PG_MAJOR=12                                 0B        buildkit.dockerfile.v0
-<missing>      3 months ago   RUN /bin/sh -c apt-get update && apt-get ins…   443MB     buildkit.dockerfile.v0````
+<missing>      3 months ago   RUN /bin/sh -c apt-get update && apt-get ins…   443MB     buildkit.dockerfile.v0
 <missing>      3 months ago   ENV JAVA_DEBIAN_VERSION=11.0.20+8-1~deb11u1     0B        buildkit.dockerfile.v0
 <missing>      3 months ago   ENV JAVA_VERSION=11.0.20                        0B        buildkit.dockerfile.v0
 <missing>      3 months ago   ENV JAVA_HOME=/docker-java-home                 0B        buildkit.dockerfile.v0
