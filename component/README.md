@@ -20,7 +20,7 @@ In our case, ***mytb*** is the name of the service who's using the docker image 
 
 ## Network dependencies
 
-In order to list network dependencies (namely opened ports, redirections and protocols) declared inside ***docker-compose.yml*** (in a friendly way) :
+In order to list network dependencies (namely opened ports, redirections and protocols) declared inside [docker-compose.yml](https://github.com/fabienzx/tb/blob/main/component/docker-compose.yml) (in a friendly way) :
 ```bash
 docker-compose config | awk '/^\s+ports:/ {flag=1; next} /^\S/ {flag=0} flag && /published|target|protocol/ {print}'
 ```
