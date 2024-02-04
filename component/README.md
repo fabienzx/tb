@@ -20,7 +20,7 @@ In our case, ***mytb*** is the name of the service who's using the docker image 
 
 ## Network dependencies
 
-In order to list network dependencies (namely opened ports, redirections and protocols) declared inside ***docker-compose.yml*** :
+In order to list network dependencies (namely opened ports, redirections and protocols) declared inside ***docker-compose.yml*** (in a friendly way) :
 ```bash
 docker-compose config | awk '/^\s+ports:/ {flag=1; next} /^\S/ {flag=0} flag && /published|target|protocol/ {print}'
 ```
@@ -95,7 +95,7 @@ IMAGE          CREATED        CREATED BY                                      SI
 
 ## Overall configuration
 
-In order to get detailed information about the Docker container, including its configuration, network settings, volumes, and more :
+In order to get detailed information about the Docker container, including its configuration, network settings, volumes, and more (in a friendly json way) :
 ```bash
 docker inspect --format='{{json .Config}}' thingsboard/tb-postgres | jq .
 ```
