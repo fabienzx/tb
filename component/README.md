@@ -3,6 +3,7 @@
 - [Services](#services)
 - [Network dependencies](#network_dependencies)
 - [Layers and build](#layersbuild)
+- [Overall configuration](#oconfig)
 
 
 ## Services
@@ -82,7 +83,7 @@ IMAGE          CREATED        CREATED BY                                      SI
 <missing>      2 months ago   ENV HTTP_BIND_PORT=9090                         0B        buildkit.dockerfile.v0
 <missing>      2 months ago   ENV DATA_FOLDER=/data                           0B        buildkit.dockerfile.v0
 <missing>      2 months ago   ENV PG_MAJOR=12                                 0B        buildkit.dockerfile.v0
-<missing>      3 months ago   RUN /bin/sh -c apt-get update && apt-get ins…   443MB     buildkit.dockerfile.v0
+<missing>      3 months ago   RUN /bin/sh -c apt-get update && apt-get ins…   443MB     buildkit.dockerfile.v0````
 <missing>      3 months ago   ENV JAVA_DEBIAN_VERSION=11.0.20+8-1~deb11u1     0B        buildkit.dockerfile.v0
 <missing>      3 months ago   ENV JAVA_VERSION=11.0.20                        0B        buildkit.dockerfile.v0
 <missing>      3 months ago   ENV JAVA_HOME=/docker-java-home                 0B        buildkit.dockerfile.v0
@@ -91,3 +92,61 @@ IMAGE          CREATED        CREATED BY                                      SI
 <missing>      9 months ago   /bin/sh -c #(nop)  CMD ["bash"]                 0B        
 <missing>      9 months ago   /bin/sh -c #(nop) ADD file:a2378c1b12e95db69…   80.5MB
 ```
+
+## Overall configuration
+
+In order to get detailed information about the Docker container, including its configuration, network settings, volumes, and more :
+```bash
+docker inspect --format='{{json .Config}}' thingsboard/tb-postgres | jq .
+```
+
+Result expected :
+```json
+{
+  "Hostname": "",                                                                                                                               
+  "Domainname": "",                                                                                                                             
+  "User": "thingsboard",                                                                                                                        
+  "AttachStdin": false,                                                                                                                         
+  "AttachStdout": false,                                                                                                                        
+  "AttachStderr": false,                                                                                                                        
+  "ExposedPorts": {                                                                                                                             
+    "1883/tcp": {},                                                                                                                             
+    "5683/udp": {},                                                                                                                             
+    "5685/udp": {},                                                                                                                             
+    "9090/tcp": {}                                                                                                                              
+  },                                                                                                                                            
+  "Tty": false,                                                                                                                                 
+  "OpenStdin": false,                                                                                                                           
+  "StdinOnce": false,                                                                                                                           
+  "Env": [                                                                                                                                      
+    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/12/bin",                                             
+    "LANG=C.UTF-8",                                                                                                                             
+    "JAVA_HOME=/docker-java-home",                                                                                                              
+    "JAVA_VERSION=11.0.20",                                                                                                                     
+    "JAVA_DEBIAN_VERSION=11.0.20+8-1~deb11u1",                                                                                                  
+    "PG_MAJOR=12",                                                                                                                              
+    "DATA_FOLDER=/data",                                                                                                                        
+    "HTTP_BIND_PORT=9090",                                                                                                                      
+    "DATABASE_TS_TYPE=sql",                                                                                                                     
+    "PGDATA=/data/db",                                                                                                                          
+    "SPRING_DRIVER_CLASS_NAME=org.postgresql.Driver",                                                                                           
+    "SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/thingsboard",                                                                       
+    "SPRING_DATASOURCE_USERNAME=thingsboard",                                                                                                   
+    "SPRING_DATASOURCE_PASSWORD=postgres",                                                                                                      
+    "PGLOG=/var/log/postgres"                                                                                                                   
+  ],                                                                                                                                            
+  "Cmd": [                                                                                                                                      
+    "start-tb.sh"                                                                                                                               
+  ],                                                                                                                                            
+  "ArgsEscaped": true,                                                                                                                          
+  "Image": "",                                                                                                                                  
+  "Volumes": {                                                                                                                                  
+    "/data": {}                                                                                                                                 
+  },                                                                                                                                            
+  "WorkingDir": "",                                                                                                                             
+  "Entrypoint": null,                                                                                                                           
+  "OnBuild": null,                                                                                                                              
+  "Labels": null                                                                                                                                
+}
+```
+
