@@ -100,3 +100,15 @@ CVE-2016-1000027 spring: HttpInvokerServiceExporter readRemoteInvocation method 
 CVE-2023-34455 snappy-java: Unchecked chunk length leads to DoS (HIGH)
 CVE-2023-43642 snappy-java: Missing upper bound check on chunk length in snappy-java can lead to Denial of Service (DoS) impact (HIGH)
 ```
+
+*Some CVE may appear multiple times (i.e. CVE-2023-4911 is a vulnerabilty that has been detected for libc-bin AND libc6, thus two entries)*
+
+**Out of those 60+ CVEs, we denote :**
+
+>Related to the docker image vulnerabilities: \t
+46 (HIGH), 2 (CRITICAL), TOTAL : 46
+
+>Related to the application itself (JAVA jar): \t
+18 (HIGH), 4 (CRITICAL), TOTAL : 22
+
+
