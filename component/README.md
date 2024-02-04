@@ -2,8 +2,8 @@
 
 - [Services](#services)
 - [Network dependencies](#network-dependencies)
-- [Layers and build](#layersbuild)
-- [Overall configuration](#oconfig)
+- [Layers and build](#layers-and-build)
+- [Overall configuration](#overall-configuration)
 
 
 ## Services
