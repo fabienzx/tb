@@ -120,4 +120,4 @@ Fixed : A patch or solve has been found and deployed, but the system is still us
 
 Affected : A patch or solve hasn't been found yet, and system may be vulnerable
 
-Will-not-fix : The developper or the team that is behind a software, library acknowledge a vulnerabilty does in fact exist, but don't plan to release any patch for it (most of the time because it's not that big of a deal)
+Will-not-fix : The developper or the team that is behind a software, library acknowledges a vulnerabilty does in fact exist, but don't plan to release any patch for it (most of the time because it's not that big of a deal)
