@@ -106,7 +106,7 @@ CVE-2023-43642 snappy-java: Missing upper bound check on chunk length in snappy-
 **Out of those 60+ CVEs, we denote :**
 
 Related to the docker image vulnerabilities:    
->46 (HIGH), 2 (CRITICAL), TOTAL : 46
+>46 (HIGH), 2 (CRITICAL), TOTAL : 46, 
 
 Related to the application itself (JAVA jar):    
 >18 (HIGH), 4 (CRITICAL), TOTAL : 22
