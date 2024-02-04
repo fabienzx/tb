@@ -1,7 +1,7 @@
 # Component identification
 
 - [Services](#services)
-- [Network dependencies](#network_dependencies)
+- [Network dependencies](#network-dependencies)
 - [Layers and build](#layersbuild)
 - [Overall configuration](#oconfig)
 
