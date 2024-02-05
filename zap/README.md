@@ -33,12 +33,14 @@ As for the scan, when you get on the front page of the app, you will have to sel
 <br>
 You can then select the url you wish to scan, in our case localhost:8080 (thingsboard web app)
 <br>
-When you click "Start the scan", your computer may experience some slowness.
+When you click *"Start the scan"*, your computer may experience some slowness.
 <br>
+
 After some minutes, you will have access to different alerts on the bottom left of ZAP.
 <br>
 This is where you will be able to see what has been detected, the severity of that said alert as well as the confidence of the scan.
 <br>
+
 Once that's done, you can decide to export the data (navigator), ultimately creating a html file (as well as some css) that can be access through a web browser.
 <br>
 That page is in fact the summary of the report that has been made thanks to the app.
