@@ -101,7 +101,7 @@ CVE-2023-34455 snappy-java: Unchecked chunk length leads to DoS (HIGH) - Status:
 CVE-2023-43642 snappy-java: Missing upper bound check on chunk length in snappy-java can lead to Denial of Service (DoS) impact (HIGH) - Status: fixed
 ```
 
-*Some CVE may appear multiple times (i.e. CVE-2023-4911 is a vulnerabilty that can be exploited both in libc-bin AND libc6, thus two entries)*
+*Some CVE may appear multiple times (i.e. CVE-2023-4911 is a vulnerabilty that can be exploited both in/with libc-bin AND libc6, thus two entries)*
 
 **We therefore denote :**
 
