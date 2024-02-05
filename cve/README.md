@@ -103,7 +103,7 @@ CVE-2023-43642 snappy-java: Missing upper bound check on chunk length in snappy-
 
 *Some CVE may appear multiple times (i.e. CVE-2023-4911 is a vulnerabilty that can be exploited both in libc-bin AND libc6, thus two entries)*
 
-**Out of those 60+ CVEs, we denote :**
+**We therefore denote :**
 
 Related to the docker image vulnerabilities:    
 >46 (HIGH), 2 (CRITICAL), TOTAL : 46 (UNIQUE:29), FIXED:16, AFFECTED:29, WNF:1.
