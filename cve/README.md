@@ -1,6 +1,7 @@
 # CVE Identification
 
 - [Trivy](#trivy)
+- [Results](#results)
 
 
 ## Trivy
@@ -100,8 +101,12 @@ CVE-2016-1000027 spring: HttpInvokerServiceExporter readRemoteInvocation method 
 CVE-2023-34455 snappy-java: Unchecked chunk length leads to DoS (HIGH) - Status: fixed
 CVE-2023-43642 snappy-java: Missing upper bound check on chunk length in snappy-java can lead to Denial of Service (DoS) impact (HIGH) - Status: fixed
 ```
-
+---
 *Some CVE may appear multiple times (i.e. CVE-2023-4911 is a vulnerabilty that can be exploited both in/with libc-bin AND libc6, thus two entries)*
+
+
+## Results
+
 
 **We therefore denote :**
 
@@ -113,11 +118,16 @@ Related to the application itself (JAVA jar):
 <br>
 <br>
 
-***What is "fixed", "affected", "will-not-fix" ?***
+>***What is "fixed", "affected", "will-not-fix" ?***
 <br>
 <br>
-Fixed : A patch or solve has been found and deployed, but the system is still using a potentially vulnerable version of the system (updating should fix the issue)
+>Fixed : A patch or solve has been found and deployed, but the system is still using a potentially vulnerable version of the system (updating should fix the issue)
 
-Affected : A patch or solve hasn't been found yet, and system may be vulnerable
+>Affected : A patch or solve hasn't been found yet, and system may be vulnerable
 
-Will-not-fix : The developper or the team that is behind a software, library acknowledges a vulnerabilty does in fact exist, but don't plan to release any patch for it (most of the time because it's not that big of a deal)
+>Will-not-fix : The developper or the team that is behind a software, library acknowledges a vulnerabilty does in fact exist, but don't plan to release any patch for it (most of the time because it's not that big of a deal)
+
+
+It is noteworthy that all the CVEs associated with the application itself have an available patch and merely necessitate an update to the latest version.
+
+Additionally, it is crucial to emphasize that although certain CVEs may be deemed impactful, their harm potential is contingent on specific circumstances that may or may not be applicable to Thingsboard.
