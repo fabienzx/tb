@@ -49,5 +49,3 @@ That page is in fact the summary of the report that has been made thanks to the 
 ## Results
 
 ![Results](risk_and_confidence.png)
-
-![Type](alert_type.png)
