@@ -116,8 +116,8 @@ Related to the docker image vulnerabilities:
 Related to the application itself (JAVA jar):    
 >18 (HIGH), 4 (CRITICAL), TOTAL : 22 (UNIQUE:19), FIXED:22, AFFECTED:0, WNF:0.
 <br>
-<br>
 ---
+<br>
 ***What is "fixed", "affected", "will-not-fix" ?***
 <br>
 <br>
@@ -128,7 +128,6 @@ Related to the application itself (JAVA jar):
 >Will-not-fix : The developper or the team that is behind a software, library acknowledges a vulnerabilty does in fact exist, but don't plan to release any patch for it (most of the time because it's not that big of a deal)
 <br>
 <br>
----
 It is noteworthy that all the CVEs associated with the application itself have an available patch and merely necessitate an update to the latest version.
 
 Additionally, it is crucial to emphasize that although certain CVEs may be deemed impactful, their harm potential is contingent on specific circumstances that may or may not be applicable to Thingsboard.
