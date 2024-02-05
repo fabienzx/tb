@@ -3,7 +3,6 @@
 - [Installation](#installation)
 - [Scan](#scan)
 - [Results](#results)
-- [Overall configuration](#overall-configuration)
 
 
 ## Installation
