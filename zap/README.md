@@ -49,3 +49,11 @@ That page is in fact the summary of the report that has been made thanks to the 
 ## Results
 
 ![Results](risk_and_confidence.png)
+
+Here's the list of the main issues that were spotted by ZAP
+
+>Missing Anti-clickjacking Header
+>Content Security Policy (CSP) Header Not Set
+>X-Content-Type-Options Header Missing
+>Timestamp Disclosure - Unix
+
