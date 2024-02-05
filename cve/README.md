@@ -116,7 +116,6 @@ Related to the docker image vulnerabilities:
 Related to the application itself (JAVA jar):    
 >18 (HIGH), 4 (CRITICAL), TOTAL : 22 (UNIQUE:19), FIXED:22, AFFECTED:0, WNF:0.
 <br>
----
 <br>
 ***What is "fixed", "affected", "will-not-fix" ?***
 <br>
