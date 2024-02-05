@@ -27,7 +27,7 @@ A lot of possible add-on will be proposed upon entering the application.
 <br>
 If you wish to install additional scans/add-ons, a marketplace is available.
 <br>
-Once the add-ons pop-up closed, you will be prompted to select a port that can be used by ZAP (most likely it will ask you to select another port than 8080, because that port is in use with your Thingsboard app)
+Once the add-ons pop-up closed, you will be prompted to select a port that can be used by ZAP, since 8080 is used for Thingsboard (unless you changed it), we select 8081.
 <br>
 
 As for the scan, when you get on the front page of the app, you will have to select one of three option (we will select the first one *"Run a scan/attack"*).
