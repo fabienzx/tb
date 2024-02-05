@@ -30,7 +30,7 @@ If you wish to install additional scans/add-ons, a marketplace is available.
 Once the add-ons pop-up closed, you will be prompted to select a port that can be used by ZAP, since 8080 is used for Thingsboard (unless you changed it), we select 8081.
 <br>
 
-As for the scan, when you get on the front page of the app, you will have to select one of three option (we will select the first one *"Run a scan/attack"*).
+As for the scan, when you get on the front page of the app, you will have to select one of three option (we will select the first one *"Automated Scan"*).
 <br>
 You can then select the url you wish to scan, in our case localhost:8080 (thingsboard web app)
 <br>
