@@ -29,7 +29,7 @@ A lot of possible add-on will be proposed upon entering the application.
 If you wish to install additional scans/add-ons, a marketplace is available.
 <br>
 
-As for the scan, when you get on the front page of the app, you will have to select one of three option (we will select the 1st one *"Run a scan/attack"*.
+As for the scan, when you get on the front page of the app, you will have to select one of three option (we will select the first one *"Run a scan/attack"*).
 <br>
 You can then select the url you wish to scan, in our case localhost:8080 (thingsboard web app)
 <br>
