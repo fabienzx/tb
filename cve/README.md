@@ -126,8 +126,8 @@ Related to the application itself (JAVA jar):
 >Affected : A patch or solve hasn't been found yet, and system may be vulnerable
 
 >Will-not-fix : The developper or the team that is behind a software, library acknowledges a vulnerabilty does in fact exist, but don't plan to release any patch for it (most of the time because it's not that big of a deal)
-
-
+<br>
+<br>
 It is noteworthy that all the CVEs associated with the application itself have an available patch and merely necessitate an update to the latest version.
 
 Additionally, it is crucial to emphasize that although certain CVEs may be deemed impactful, their harm potential is contingent on specific circumstances that may or may not be applicable to Thingsboard.
