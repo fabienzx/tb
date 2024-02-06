@@ -21,7 +21,7 @@ Then we can run the following command to make Trivy analyze the container :
 docker run -v /var/run/docker.sock:/var/run/docker.sock -v $HOME/Library/Caches:/root/.cache/ aquasec/trivy:0.49.0 image thingsboard/tb-postgres --format json > rapport_vulnerabilites.json
 ```
 
-Result expected : Available in [vulnerabilities.json](https://github.com/fabienzx/tb/blob/main/cve/vulnerabilities.json)
+Result expected : Available in [vulnerabilities.json](https://github.com/fabienzx/tb/blob/main/trivy/vulnerabilities.json)
 
 To make sure we get an appropriate and friendly list of the different CVE that were found out thanks to Trivy, we will format the output (full details remain available in the json file) 
 
