@@ -8,7 +8,9 @@
 ## Installation
 
 [Trivy (git)](https://github.com/aquasecurity/trivy)
+<br>
 [OWASP ZAP (git)](https://github.com/zaproxy/zaproxy)
+<br>
 [SpotBugs (git)](https://github.com/spotbugs/spotbugs)
 
 ## Utilisation
