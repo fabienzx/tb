@@ -160,7 +160,7 @@ So that we can then tell the following :
             1883/tcp: MQTT, used for IoT communication.
             5683/udp: CoAP, used for IoT communication.
             5685/udp: CoAP, used for IoT communication.
-            9090/tcp: HTTP_BIND_PORT, likely used for RPC access or APIs.
+            9090/tcp: HTTP_BIND_PORT, used to access the web app.
 
     Environment Variables:
         The environment variables indicate specific Thingsboard and PostgreSQL configurations:
