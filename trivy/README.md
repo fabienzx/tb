@@ -1,4 +1,4 @@
-# Static code analysis 1
+# Static code analysis Trivy
 
 - [Trivy](#trivy)
 - [Results](#results)
