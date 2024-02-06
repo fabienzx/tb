@@ -118,14 +118,13 @@ CVE-2023-43642 snappy-java: Missing upper bound check on chunk length in snappy-
 
 <br>
 
-***What is "fixed", "affected", "will-not-fix" ?***
+**Definitions:**
 
+- **Fixed:** A solution or patch has been identified and deployed. However, the system is still utilizing a potentially vulnerable version. Updating to the latest version should resolve the issue.
 
->Fixed : A patch or solve has been found and deployed, but the system is still using a potentially vulnerable version of the system (updating should fix the issue)
+- **Affected:** No solution or patch has been identified yet, leaving the system vulnerable to potential threats.
 
->Affected : A patch or solve hasn't been found yet, and system may be vulnerable
-
->Will-not-fix : The developper or the team that is behind a software, library acknowledges a vulnerabilty does in fact exist, but don't plan to release any patch for it (most of the time because it's not that big of a deal)
+- **Will-not-fix:** The developer or responsible team acknowledges the existence of a vulnerability but has no plans to release a patch. This decision is often made when the vulnerability is deemed insignificant/not worth it.
 
 <br>
 <br>
