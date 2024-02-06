@@ -20,6 +20,8 @@ Trivy: Static code analysis<br>
 OWASP ZAP: Dynamic code analysis<br>
 SpotBugs: Static code analysis<br>
 
+Let it be noted that those tools are helpful but aren't necessarily exhaustive and should be completed with a **Manual Code Analysis**.
+
 # Static vs. Dynamic Code Analysis
 
 ## Static Code Analysis:
