@@ -34,7 +34,7 @@ You can open SpotBugs graphical interface with (*pwd: spotbugs-X.Y.Z/bin*)
 
 ## Scan
 
-We first need to get the ***jar file*** from thingsboard application.
+We first need to locate the ***jar file*** from thingsboard application.
 
 To do this, we need to search for that file in the container thingsboard/tb-postgres
 
@@ -78,6 +78,10 @@ When this is done, you can open SpotBugs, create a project, choose the JAR file,
 The GUI will be displaying a tree of vulnerabilities, issues, code flaws, recommendations.
 
 You can then export the results as XML or HTML webpage for instance.
+
+>Webpage available [here](sbugs-result.xml.html)
+
+>XML (less readable) available [here](sbugs-result.xml)
 
 
 
