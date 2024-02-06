@@ -15,8 +15,8 @@
 
 ## Utilisation
 
-Trivy: Static code analysis
-OWASP ZAP: Dynamic code analysis
-SpotBugs: Static code analysis
+Trivy: Static code analysis<br>
+OWASP ZAP: Dynamic code analysis<br>
+SpotBugs: Static code analysis<br>
 
 
