@@ -1,4 +1,4 @@
-# CVE Identification
+# Static code analysis 1
 
 - [Trivy](#trivy)
 - [Results](#results)
