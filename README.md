@@ -3,7 +3,7 @@
 ## Table des Matières
 - [Installation](#installation)
 - [Utilisation](#utilisation)
-- [Static vs. Dynamic Code Analysis](#static-vs.-dynamic-code-analysis) 
+- [Static vs. Dynamic Code Analysis](#static-vs-dynamic-code-analysis) 
 
 
 ## Installation
