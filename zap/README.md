@@ -23,28 +23,17 @@ zaproxy
 
 ## Scan
 
-A lot of possible add-on will be proposed upon entering the application.
-<br>
-If you wish to install additional scans/add-ons, a marketplace is available.
-<br>
-Once the add-ons pop-up closed, you will be prompted to select a port that can be used by ZAP, since 8080 is used for Thingsboard (unless you changed it), we select 8081.
-<br>
+Upon entering the application, you'll encounter various add-on options. If you wish to install additional scans or add-ons, there's a marketplace available.
 
-As for the scan, when you get on the front page of the app, you will have to select one of three option (we will select the first one *"Automated Scan"*).
-<br>
-You can then select the url you wish to scan, in our case localhost:8080 (thingsboard web app)
-<br>
-When you click *"Start the scan"*, your computer may experience some slowness.
-<br>
+After closing the add-ons pop-up, you'll be asked to choose a port for ZAP. We typically recommend selecting port 8081, as 8080 is usually reserved for Thingsboard (unless altered).
 
-After some minutes, you will have access to different alerts on the bottom left of ZAP.
-<br>
-This is where you will be able to see what has been detected, the severity of that said alert as well as the confidence of the scan.
-<br>
+For the scanning process, on the app's front page, you'll select from three options; we'll choose the "Automated Scan." Then, specify the URL to scan; in our case, it's localhost:8080 (the Thingsboard web app).
 
-Once that's done, you can decide to export the data (navigator), ultimately creating a html file (as well as some css) that can be access through a web browser.
-<br>
-That page is in fact the summary of the report that has been made thanks to the app.
+Once you click "Start the Scan," your computer might slow down briefly.
+
+After a few minutes, you'll find various alerts at the bottom left of ZAP. Here, you can review detected issues, including their severity and scan confidence.
+
+After completion, you can export the data through the navigator, resulting in an HTML report accessible via a web browser. This report summarizes the findings from the scan.
 
 ## Results
 
