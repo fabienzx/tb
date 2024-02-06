@@ -21,7 +21,7 @@ Then we can run the following command to make Trivy analyze the container :
 docker run -v /var/run/docker.sock:/var/run/docker.sock -v $HOME/Library/Caches:/root/.cache/ aquasec/trivy:0.49.0 image thingsboard/tb-postgres --format json > rapport_vulnerabilites.json
 ```
 
-Result expected : Available in [vulnerabilities.json](https://github.com/fabienzx/tb/blob/main/trivy/vulnerabilities.json)
+Result: [vulnerabilities.json](https://github.com/fabienzx/tb/blob/main/trivy/vulnerabilities.json)
 
 To make sure we get an appropriate and friendly list of the different CVE that were found out thanks to Trivy, we will format the output (full details remain available in the json file) 
 
@@ -29,7 +29,7 @@ To make sure we get an appropriate and friendly list of the different CVE that w
 docker run -v /var/run/docker.sock:/var/run/docker.sock -v $HOME/Library/Caches:/root/.cache/ aquasec/trivy:0.49.0 image --severity HIGH,CRITICAL thingsboard/tb-postgres --format json | jq -r '.Results[].Vulnerabilities[] | "\(.VulnerabilityID) \(.Title) (\(.Severity)) - Status: \(.Status)"' > cve-format.txt
 ```
 
-Result expected :
+Result:
 
 ```txt
 CVE-2022-3715 a heap-buffer-overflow in valid_parameter_transform (HIGH) - Status: affected
@@ -110,11 +110,11 @@ CVE-2023-43642 snappy-java: Missing upper bound check on chunk length in snappy-
 
 **We therefore denote :**
 
-Related to the docker image vulnerabilities:    
->46 (HIGH), 2 (CRITICAL), TOTAL : 46 (UNIQUE:29), FIXED:16, AFFECTED:29, WNF:1.
+| Vulnerability Type         | HIGH  | CRITICAL | TOTAL | UNIQUE | FIXED | AFFECTED | WNF |
+|----------------------------|-------|----------|-------|--------|-------|----------|-----|
+| Docker Image Vulnerabilities | 46    | 2        | 46    | 29     | 16    | 29       | 1   |
+| Application (JAVA jar) Vulnerabilities | 18    | 4        | 22    | 19     | 22    | 0        | 0   |
 
-Related to the application itself (JAVA jar):    
->18 (HIGH), 4 (CRITICAL), TOTAL : 22 (UNIQUE:19), FIXED:22, AFFECTED:0, WNF:0.
 <br>
 
 ***What is "fixed", "affected", "will-not-fix" ?***
