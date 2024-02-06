@@ -1,4 +1,4 @@
-# Dynamic analysis OWASP-ZAP
+# Dynamic code analysis OWASP-ZAP
 
 - [Installation](#installation)
 - [Scan](#scan)
