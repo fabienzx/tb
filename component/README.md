@@ -150,3 +150,24 @@ Result expected :
 }
 ```
 
+    Exposed Ports:
+        The container exposes the following ports:
+            1883/tcp: MQTT, used for IoT communication.
+            5683/udp: CoAP, used for IoT communication.
+            5685/udp: CoAP, used for IoT communication.
+            9090/tcp: HTTP_BIND_PORT, likely used for RPC access or APIs.
+
+    Environment Variables:
+        The environment variables indicate specific Thingsboard and PostgreSQL configurations:
+            JAVA_HOME is set to version 11 of the JDK.
+            The PostgreSQL data directory is set to "/data/db".
+            PostgreSQL database connection information is provided in the variables SPRING_DATASOURCE_URL, SPRING_DATASOURCE_USERNAME, and SPRING_DATASOURCE_PASSWORD.
+            The HTTP_BIND_PORT is configured to 9090.
+            The database type is specified as TimescaleDB in DATABASE_TS_TYPE.
+            PGLOG indicates the PostgreSQL log directory.
+
+    Execution Command:
+        The execution command is "start-tb.sh," likely used to start Thingsboard.
+
+    Volumes:
+        The container mounts a volume at "/data," suggesting that data, including database data, is persistent.
