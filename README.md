@@ -1,6 +1,6 @@
 # Thingsboard: Penetration-Test / Vulnerabilities finding / Code Analysis
 
-### This work is part of a broader project completed for an IoT pentest initiative undertaken at INSA-CVL
+### This work is part of a broader project completed for an IoT pentest endeavor undertaken at INSA-CVL
 
 ## Table des Matières
 - [Installation](#installation)
