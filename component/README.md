@@ -149,6 +149,11 @@ Result expected :
   "Labels": null                                                                                                                                
 }
 ```
+---
+
+<br>
+
+So that we can then tell the following :
 
     Exposed Ports:
         The container exposes the following ports:
