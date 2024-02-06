@@ -2,9 +2,9 @@
 
 ### This work is part of a broader project completed for an IoT pentest endeavor undertaken at INSA-CVL.
 
-## Table des Matières
+## Summary
 - [Installation](#installation)
-- [Utilisation](#utilisation)
+- [Use](#use)
 - [Static vs. Dynamic Code Analysis](#static-vs-dynamic-code-analysis) 
 
 
@@ -16,7 +16,7 @@
 <br>
 [SpotBugs (git)](https://github.com/spotbugs/spotbugs)
 
-## Utilisation
+## Use
 
 Trivy: Static code analysis<br>
 OWASP ZAP: Dynamic code analysis<br>
