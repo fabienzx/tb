@@ -1,4 +1,4 @@
-# Thingsboard: Penetration-Test and Vulnerabilities finding
+# Thingsboard: Penetration-Test / Vulnerabilities finding / Code Analysis
 
 ## Table des Matières
 - [Installation](#installation)
