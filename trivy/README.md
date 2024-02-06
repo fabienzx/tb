@@ -112,8 +112,8 @@ CVE-2023-43642 snappy-java: Missing upper bound check on chunk length in snappy-
 
 | Vulnerability Type                  | HIGH | CRITICAL | TOTAL | UNIQUE | FIXED | AFFECTED | WILL-NOT-FIX |
 |-------------------------------------|:----:|:--------:|:-----:|:------:|:-----:|:--------:|:---:|
-| Docker Image Vulnerabilities (system) |  46  |    2     |   46  |   29   |   16 *(35%)* |    29 *(63%)*   |  1 *(2%)*  |
-| Application (JAVA jar) Vulnerabilities |  18  |    4     |   22  |   19   |   22 *(100%)*  |    0 *(0%)*    |  0 *(0%)*  |
+| Docker Image Vulnerabilities (system) |  46  |    2     |   46  |   29   |   16 (*35%*) |    29 (*63%*)   |  1 (*2%*)  |
+| Application (JAVA jar) Vulnerabilities |  18  |    4     |   22  |   19   |   22 (*100%*)  |    0 (*0%*)    |  0 (*0%*)  |
 
 
 <br>
