@@ -136,6 +136,10 @@ According to Red Hat :
 >This may allow an attacker to craft a malicious ZIP file that will lead to an overflow on the length field. This value is further used in memory allocations and indexing, which can cause an out-of-bounds >write, leading to heap corruption and possible arbitrary code execution
 >Additionally, the user would need to be tricked into opening the crafted file from an attacker to be successful.
 
+However it is required to have MiniZIP from zlib in the container.
+
+zlib is indeed present in the container but MiniZIP isn't integrated by default.
+
 <br>
 It is noteworthy that all the CVEs associated with the application itself have an available patch and merely necessitate an update to the latest version.
 
