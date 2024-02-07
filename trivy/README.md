@@ -141,6 +141,6 @@ However it is required to have MiniZIP from zlib in the container.
 zlib is indeed present in the container but MiniZIP isn't integrated by default.
 
 <br>
-It is noteworthy that all the CVEs associated with the application itself have an available patch and merely necessitate an update to the latest version.
+It is noteworthy that all the CVEs associated with the application itself have an available patch and merely necessitate an update to the latest version or nothing at all depending on the use of the different libraries.
 
 Additionally, it is crucial to emphasize that although certain CVEs may be deemed impactful, their harm potential is contingent on specific circumstances that may or may not be applicable to Thingsboard.
