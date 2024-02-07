@@ -128,7 +128,7 @@ CVE-2023-43642 snappy-java: Missing upper bound check on chunk length in snappy-
 
 <br>
 
-*Note: cve-2023-45853 is tagged as "WILL-NOT-FIXED" but a patch has been released in the latest build.*
+*Note: cve-2023-45853 is tagged as "WILL-NOT-FIX" but a patch has been released in the latest build.*
 
 The CVE PoC consist of a crafted ZIP file that has to be opened on victim's end.
 
