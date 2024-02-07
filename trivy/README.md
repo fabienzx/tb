@@ -127,7 +127,7 @@ CVE-2023-43642 snappy-java: Missing upper bound check on chunk length in snappy-
 - **Will-not-fix:** The developer or responsible team acknowledges the existence of a vulnerability but has no plans to release a patch. This decision is often made when the vulnerability is deemed insignificant/not worth it.
 
 <br>
-
+`
 *Note: cve-2023-45853 is tagged as "WILL-NOT-FIX" but a patch has been released in the latest build.*
 
 The CVE PoC consist of a crafted ZIP file that has to be opened on victim's end.
@@ -139,7 +139,7 @@ According to Red Hat :
 However it is required to have MiniZIP from zlib in the container.
 
 zlib is indeed present in the container but MiniZIP isn't integrated by default.
-
+`
 <br>
 It is noteworthy that all the CVEs associated with the application itself have an available patch and merely necessitate an update to the latest version.
 
